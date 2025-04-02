@@ -1,0 +1,76 @@
+Privacy Policy
+==============
+
+Having a privacy policy has become a standard requirement—because too often,
+our data is collected, manipulated, and sold without our consent or knowledge.
+And usually, our only choice is to not use the tool we need.
+
+We believe that can change.
+
+Our short version: we can't, we don't, and we won't, but that's not considered
+a valid legal policy today. So here’s the full story.
+
+No Tracking. No Data Collection. No Analytics. No AI.
+-----------------------------------------------------
+
+OpenEmail apps do not collect, process, or share any personal information,
+except for the data users explicitly choose to include in their public profile.
+
+ - No tracking, no analytics, no behavioral data collection.  
+ - No permanent message storage, messages are end-to-end encrypted and only
+   accessible to intended recipients for a limited time.  
+ - No AI-based content filtering, scanning, or monetization.
+
+We Don't Use Cookies
+--------------------
+
+OpenEmail native apps do not use cookies. If you use the web version, we may
+use essential cookies strictly for login sessions. No tracking or analytics
+cookies are ever used.
+
+Public Profiles Are Optional and User-Controlled
+------------------------------------------------
+
+Users may choose to create a public profile, which is uploaded to their mail
+agent for others to access.
+
+ - Users decide exactly what to include.  
+ - No one is forced to create a profile—privacy is the default.  
+ - OpenEmail developers do not store any profile data.  
+
+No Third-Party Services or Ads
+------------------------------
+
+OpenEmail apps do not integrate with:
+
+ - Third-party analytics or tracking services  
+ - Advertising networks  
+ - Data-sharing services  
+
+No Centralized Servers. No Backdoors.
+-------------------------------------
+
+ - OpenEmail runs on a decentralized, open protocol. There are no central
+   servers storing all user data.  
+ - All messages are end-to-end encrypted, even we cannot access them. That 
+   includes the metadata, such as the information on the parties with which 
+   you are communicating with.
+ - There are no backdoors, hidden data collection, or silent dependencies. 
+   We cannot intercept message content even if forced to.
+
+You Are in Full Control
+-----------------------
+
+ - You can delete your profile or messages at any time.  
+ - No external accounts required—you control your identity and data.  
+ - You decide who to communicate with, and what to share.  
+
+Changes to This Policy
+----------------------
+
+If this policy changes, we’ll let you know via app updates or release notes.
+Our commitment to privacy will never change.
+
+2. April 2025
+Mercata Sagl
+Paradiso, Switzerland
