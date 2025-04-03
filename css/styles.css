@@ -163,7 +163,7 @@ a.button {
     min-height: 250px;
     height: auto;
     width: 50%;
-    background-image: url(../img/desktop.png);
+    background-image: url(/img/desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -173,7 +173,7 @@ a.button {
     min-height: 250px;
     height: auto;
     width: 50%;       
-    background-image: url(../img/mobile.png);
+    background-image: url(/img/mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left bottom;
