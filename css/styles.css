@@ -125,7 +125,7 @@ section ul li {
 }
 
 
-a.download-button {           
+a.button {           
   display: inline-flex;
   background-color: #007BFF;
   color: white;
