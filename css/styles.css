@@ -140,10 +140,14 @@ a.button {
   gap: 1rem;
   flex-wrap: wrap;
   margin: 3rem 0;
-  opacity: 0.3;
 }
 #stores a {
   display: inline-flex;
+  opacity: 0.3;
+}
+
+#stores a.google_play {
+  opacity: 1;
 }
 
 #stores a img {
