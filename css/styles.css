@@ -12,7 +12,7 @@ header, footer {
   display: flex;
   max-width: 900px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem 0;
 }
   /* Header Logo */
   header > a {
@@ -53,28 +53,25 @@ header, footer {
     border-bottom: 2px solid #333;
   }
   nav ul li a img {
-    min-width: 60px;
-    width: 60px;
+    min-width: 50px;
+    width: 50px;
   }
 
 .hero {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero h1 {    
-    font-weight: 500;
     line-height: 1.5;
-    font-size: 2rem;
     display: inline-block;
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
-
 
 main {
   display: flex;
@@ -84,7 +81,7 @@ main {
   padding: 0 1.5rem;
 }
 section {
-  max-width: 600px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
 }
@@ -108,11 +105,13 @@ h2 {
   text-align: center;
 }
 h3 {
-  font-style: italic;
   font-size: 1.4rem;
   font-weight: 400;
+  margin: 0;
   text-align: center;
-  margin: 0.5rem 0;
+}
+.center {
+  text-align: center;
 }
 
 section ul {
@@ -149,6 +148,11 @@ a.button {
 #stores a.google_play {
   opacity: 1;
 }
+
+#stores a.apple_store {
+  opacity: 1;
+}
+
 
 #stores a img {
   height: 50px;
@@ -204,12 +208,11 @@ a.button {
   }
   .hero h1 {
     margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-  .hero h3 {
-    font-size: 1.3rem;
   }
   .images {
     display: none;
+  }
+  h1 {
+    font-size: 1.8rem;
   }
 }
