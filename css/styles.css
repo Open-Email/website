@@ -153,6 +153,10 @@ a.button {
   opacity: 1;
 }
 
+#stores a.windows_store {
+  opacity: 1;
+}
+
 
 #stores a img {
   height: 50px;
