@@ -1,5 +1,13 @@
+:root {
+  --fg: #333;
+  --bg: white;
+  --accent: #007bff;
+}
+
 body {
   font-family: Archivo, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
   margin: 0;
   padding: 0;
   font-size: clamp(1em, 2.5vw, 1.2em);
@@ -8,7 +16,7 @@ body {
   min-width: 24rem;
 }
 
-/* Header */
+/* Header, footer */
 header,
 footer {
   display: flex;
@@ -48,11 +56,11 @@ nav ul li:last-child {
 nav ul li a {
   text-decoration: none;
   font-weight: 500;
-  color: #333;
+  color: var(--fg);
   display: flex;
 }
 nav ul li a.active {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--fg);
 }
 nav ul li a img {
   min-width: 50px;
@@ -79,7 +87,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   padding: 0 1.5rem;
 }
 section {
@@ -127,7 +135,7 @@ section ul li {
 
 a.button {
   display: inline-flex;
-  background-color: #007bff;
+  background-color: var(--accent);
   color: white;
   padding: 9px 20px;
   text-decoration: none;
@@ -215,5 +223,16 @@ a.button {
   }
   .images {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: white;
+    --bg: #151515;
+  }
+
+  .inverted {
+    filter: brightness(0) invert();
   }
 }
