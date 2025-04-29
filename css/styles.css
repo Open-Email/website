@@ -8,54 +8,55 @@ body {
 }
 
 /* Header */
-header, footer {
+header,
+footer {
   display: flex;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem 0;
 }
-  /* Header Logo */
-  header > a {
-    width: 150px;
-    height: auto;
-  }
-  nav {
-    flex: 1 auto;
-    display: flex;    
-  }
-  header > nav {
-    justify-content: flex-end;
-  }
-  footer > nav {
-    justify-content: center;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  nav ul li {
-    margin-right: 2rem;
-  }
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  nav ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #333;
-    font-size: 1.1rem;
-    display: flex;
-  }
-  nav ul li a.active {
-    border-bottom: 2px solid #333;
-  }
-  nav ul li a img {
-    min-width: 50px;
-    width: 50px;
-  }
+/* Header Logo */
+header > a {
+  width: 150px;
+  height: auto;
+}
+nav {
+  flex: 1 auto;
+  display: flex;
+}
+header > nav {
+  justify-content: flex-end;
+}
+footer > nav {
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 2rem;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 1.1rem;
+  display: flex;
+}
+nav ul li a.active {
+  border-bottom: 2px solid #333;
+}
+nav ul li a img {
+  min-width: 50px;
+  width: 50px;
+}
 
 .hero {
   margin: 2rem auto 0;
@@ -65,12 +66,12 @@ header, footer {
   align-items: center;
 }
 
-.hero h1 {    
-    line-height: 1.5;
-    display: inline-block;
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+.hero h1 {
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 main {
@@ -100,8 +101,8 @@ h2 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.5;
-  margin: 2rem 0 1rem;        
-  display: inline-block;  
+  margin: 2rem 0 1rem;
+  display: inline-block;
   text-align: center;
 }
 h3 {
@@ -123,9 +124,9 @@ section ul li {
   padding-top: 0.5rem;
 }
 
-a.button {           
+a.button {
   display: inline-flex;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   padding: 9px 20px;
   text-decoration: none;
@@ -135,7 +136,7 @@ a.button {
 
 #stores {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   margin: 3rem 0;
@@ -157,40 +158,38 @@ a.button {
   opacity: 1;
 }
 
-
 #stores a img {
   height: 50px;
   width: auto;
 }
 
-  .images {
-    display: flex;
-  }
-  .images div {
-    display: flex;
-    flex-direction: row;          
-  }
-  .images .desktop{
-    max-height: 500px;
-    min-height: 250px;
-    height: auto;
-    width: 50%;
-    background-image: url(/img/desktop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-  .images .mobile{
-    max-height: 500px;  
-    min-height: 250px;
-    height: auto;
-    width: 50%;       
-    background-image: url(/img/mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-  }
-
+.images {
+  display: flex;
+}
+.images div {
+  display: flex;
+  flex-direction: row;
+}
+.images .desktop {
+  max-height: 500px;
+  min-height: 250px;
+  height: auto;
+  width: 50%;
+  background-image: url(/img/desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.images .mobile {
+  max-height: 500px;
+  min-height: 250px;
+  height: auto;
+  width: 50%;
+  background-image: url(/img/mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
 
 .logo {
   display: flex;
