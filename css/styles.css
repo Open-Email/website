@@ -1,61 +1,71 @@
-body {
-  font-family: Archivo, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  font-weight: 400;
+:root {
+  --fg: #333;
+  --bg: white;
+  --accent: #007bff;
 }
 
-/* Header */
-header, footer {
+body {
+  font-family: Archivo, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  margin: 0;
+  padding: 0;
+  font-size: clamp(1em, 2.5vw, 1.2em);
+  line-height: 1.8;
+  font-weight: 400;
+  min-width: 24rem;
+}
+
+/* Header, footer */
+header,
+footer {
   display: flex;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem 0;
 }
-  /* Header Logo */
-  header > a {
-    width: 150px;
-    height: auto;
-  }
-  nav {
-    flex: 1 auto;
-    display: flex;    
-  }
-  header > nav {
-    justify-content: flex-end;
-  }
-  footer > nav {
-    justify-content: center;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  nav ul li {
-    margin-right: 2rem;
-  }
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  nav ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #333;
-    font-size: 1.1rem;
-    display: flex;
-  }
-  nav ul li a.active {
-    border-bottom: 2px solid #333;
-  }
-  nav ul li a img {
-    min-width: 50px;
-    width: 50px;
-  }
+
+/* Header Logo */
+header > a {
+  width: 150px;
+  height: auto;
+}
+nav {
+  flex: 1 auto;
+  display: flex;
+}
+header > nav {
+  justify-content: flex-end;
+}
+footer > nav {
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 2rem;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--fg);
+  display: flex;
+}
+nav ul li a.active {
+  border-bottom: 2px solid var(--fg);
+}
+nav ul li a img {
+  min-width: 50px;
+  width: 50px;
+}
 
 .hero {
   margin: 2rem auto 0;
@@ -65,19 +75,19 @@ header, footer {
   align-items: center;
 }
 
-.hero h1 {    
-    line-height: 1.5;
-    display: inline-block;
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+.hero h1 {
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   padding: 0 1.5rem;
 }
 section {
@@ -90,22 +100,22 @@ section p {
   width: 100%;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2em;
   font-weight: 500;
   line-height: 1.5;
   margin: 2rem 0;
   text-align: center;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5em;
   font-weight: 500;
   line-height: 1.5;
-  margin: 2rem 0 1rem;        
-  display: inline-block;  
+  margin: 2rem 0 1rem;
+  display: inline-block;
   text-align: center;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3em;
   font-weight: 400;
   margin: 0;
   text-align: center;
@@ -123,9 +133,9 @@ section ul li {
   padding-top: 0.5rem;
 }
 
-a.button {           
+a.button {
   display: inline-flex;
-  background-color: #007BFF;
+  background-color: var(--accent);
   color: white;
   padding: 9px 20px;
   text-decoration: none;
@@ -135,7 +145,7 @@ a.button {
 
 #stores {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   margin: 3rem 0;
@@ -157,40 +167,38 @@ a.button {
   opacity: 1;
 }
 
-
 #stores a img {
   height: 50px;
   width: auto;
 }
 
-  .images {
-    display: flex;
-  }
-  .images div {
-    display: flex;
-    flex-direction: row;          
-  }
-  .images .desktop{
-    max-height: 500px;
-    min-height: 250px;
-    height: auto;
-    width: 50%;
-    background-image: url(/img/desktop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-  .images .mobile{
-    max-height: 500px;  
-    min-height: 250px;
-    height: auto;
-    width: 50%;       
-    background-image: url(/img/mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-  }
-
+.images {
+  display: flex;
+}
+.images div {
+  display: flex;
+  flex-direction: row;
+}
+.images .desktop {
+  max-height: 500px;
+  min-height: 250px;
+  height: auto;
+  width: 50%;
+  background-image: url(/img/desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.images .mobile {
+  max-height: 500px;
+  min-height: 250px;
+  height: auto;
+  width: 50%;
+  background-image: url(/img/mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
 
 .logo {
   display: flex;
@@ -216,7 +224,15 @@ a.button {
   .images {
     display: none;
   }
-  h1 {
-    font-size: 1.8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: white;
+    --bg: #151515;
+  }
+
+  .inverted {
+    filter: brightness(0) invert();
   }
 }
